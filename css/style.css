@@ -5,12 +5,18 @@
 }
 
 /* General CSS */
+html {
+      scroll-behavior: smooth;
+}
 body {
-      margin: 0 auto;
+      margin: 0 auto;.
       box-sizing: border-box;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       color: var(--main-text-color);
+      min-width: 440px;
+      max-width: 1920px;
+      
 }
 
 a {
@@ -32,32 +38,6 @@ ul, ol {
 }
 
 
-/* Header */
-
-.header-center {
-      min-height: 5vh;
-      width: 100%;
-      position: fixed;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      color: white;
-      display: none;
-}
-
-
-.nav-center li {
-      font-size: 1.2em;
-      display: inline;
-      padding: 0 20px;
-}
-
-.nav-center li:hover {
-      text-decoration: underline;
-      color: lightgray;
-}
-
 /* Content Banners */
 .banner-title {
       text-align: center;
@@ -78,7 +58,8 @@ ul, ol {
 .welcome {
       min-height: 100vh;
       width: 100%;
-      background-image: url("/imgs/bg-welcome.jpg");
+      background-color: black;
+      background-image: url("https://raw.githubusercontent.com/discloseagency/design_v2/main/imgs/bg-welcome.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -165,7 +146,8 @@ ul, ol {
 }
 
 .right p {
-      padding: 50px 50px 0 50px;
+      padding: 30px 0;
+      width: 80%;
       line-height: 2em;
       font-size: 1.5em;
 }
@@ -244,7 +226,7 @@ ul, ol {
 .title {
       margin: 0;
       padding: 24px;
-      font-size: 2.5em;
+      font-size: 2.2em;
       font-weight: bold;
       line-height: 1;
       color: rgba(0, 0, 0, 0.87);
@@ -253,7 +235,7 @@ ul, ol {
 .description {
       margin: 0;
       padding: 0 24px 24px;
-      font-size: 1.4em;
+      font-size: 1.2em;
       font-weight: 500;
       line-height: 1.5;
 }
@@ -299,7 +281,7 @@ ul, ol {
 }
 
 .quem-faz-right p {
-      padding: 20px 50px;
+      padding: 20px 0px;
       width: 50%;
       line-height: 2em;
       font-size: 1.5em;
@@ -309,8 +291,8 @@ ul, ol {
 .quem-faz-img {
       margin-top: 50px;
       background-image: url("https://raw.githubusercontent.com/discloseagency/discloseagency.github.io/master/img/bg-michel.jpg");
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
       border-radius: 50%;
 }
 
@@ -344,6 +326,14 @@ ul, ol {
       display: flex;
       flex-direction: column;
       text-align: center;
+  }
+
+  .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
   }
 input, textarea {
       display: block;

@@ -11,13 +11,11 @@
       }
   }
   
-  @media screen and (max-width: 1200px) {
-      html, body {
-          font-size: 12px;
-      }
-  }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1000px) {
+      html, body {
+            font-size: 12px;
+        }
       .welcome {
             text-align: center;
 
@@ -61,6 +59,12 @@
 
       input, textarea {
             width: 80%;
+      }
+      .title {
+            font-size: 2.8em;
+      }
+      .logo-text {
+            padding: 120px 0;
       }
   }
   
